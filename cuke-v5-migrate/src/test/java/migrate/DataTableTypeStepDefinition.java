@@ -20,6 +20,8 @@ import io.cucumber.java.en.Given;
 
 public class DataTableTypeStepDefinition {
 	
+	//You can comment the first 2 @DataTableType annotated methods.
+	//Jackson object mapper (refer Configurer class) will convert them.
 	@DataTableType
 	public Lecture getLecture(Map<String, String> entry) {
 		return Lecture.createLecture(entry);
